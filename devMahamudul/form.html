@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Creation</title>
+    <style>
+        form{
+            width: 50%;
+            margin: auto;
+        }
+        legend{
+            font-size: 2.5rem;
+        }
+        input[type="submit"], input[type="reset"]{
+            padding: 10px 20px;
+            background-color: #000;
+            color: #f2f2f2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/test.php" method="post">
+        <fieldset>
+            <legend>Student Regisration Form</legend><br>
+            <label for="sname">Student Name:</label>
+            <input type="text" id="sname" name="sname"><br> <br>
+            <label for="fname">Father Name:</label>
+            <input type="text" id="fname" name="fname"><br> <br>
+            <label for="mname">Mother Name:</label>
+            <input type="text" id="mname" name="mname"><br> <br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address"></textarea><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Mobile No:</label>
+            <input type="number" id="phone" name="phone"><br><br>
+
+            <label for="subject">Choose Your Subject:</label>
+            <input type="radio" id="cse" name="fav_sub" value="CSE">
+            <label for="cse">CSE</label>
+            <input type="radio" id="bba" name="fav_sub" value="BBA">
+            <label for="bba">BBA</label><br><br>
+            <label for="area">Interseted Area:</label><br><br>
+            <input type="checkbox" id="area1" name="area1" value="Programming_language">
+            <label for="area1">Programming Language</label><br><br>
+            <input type="checkbox" id="area2" name="area2" value="Web_Design">
+            <label for="area2">Web Design</label><br><br>
+            <input type="checkbox" id="area3" name="area3" value="Marketing">
+            <label for="area3">Marketing</label><br><br>
+            <label for="gpa">Achieved GPA for scholarship:</label>
+            <input list="gpas" id="gpa" name="gpa">
+                <datalist id="gpas">
+                    <option value="5">
+                    <option value="4.75-4.99">
+                    <option value="4.50-4.74">
+                    <option value="4.00-4.99">
+                </datalist><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+
+
+
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
