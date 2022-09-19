@@ -23,3 +23,4 @@ $conn = new mysqli('localhost','root','','student') or die("Unable to connect");
 		$conn->close();
 	}
 ?>
+ge 
