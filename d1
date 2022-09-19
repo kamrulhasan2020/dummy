@@ -2,5 +2,9 @@ dummy code
 
 modified from deb branch
 
+<<<<<<< HEAD
 
 new line
+=======
+new line2
+>>>>>>> 8b8f638 (added copy)
